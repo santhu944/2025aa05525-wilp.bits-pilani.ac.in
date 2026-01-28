@@ -16,7 +16,7 @@ import seaborn as sns
 # ================================
 st.set_page_config(page_title="Credit Card Risk Prediction", layout="wide")
 
-st.title("💳 Credit Card Risk Level Prediction System")
+st.title(" Credit Card Risk Level Prediction System")
 st.write("""
 This Streamlit app evaluates multiple machine learning models for predicting 
 Credit Card Risk Levels:
@@ -87,7 +87,7 @@ def evaluate_model(model, X, y):
 # ================================
 if uploaded_file is not None:
     df = pd.read_csv(uploaded_file)
-    st.subheader("📊 Uploaded Dataset Preview")
+    st.subheader(" Uploaded Dataset Preview")
     st.dataframe(df.head())
 
     if "risk_level" not in df.columns:
@@ -110,7 +110,7 @@ if uploaded_file is not None:
                 model, X_processed, y
             )
 
-            st.subheader(f"📈 Evaluation Metrics for {model_name}")
+            st.subheader(f"Evaluation Metrics for {model_name}")
 
             col1, col2, col3 = st.columns(3)
             col1.metric("Accuracy", f"{acc:.4f}")
