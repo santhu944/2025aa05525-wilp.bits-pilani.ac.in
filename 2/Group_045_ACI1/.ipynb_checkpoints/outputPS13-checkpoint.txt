@@ -1,0 +1,11 @@
+Scenario 1
+ACO Best Path: 0 -> 4
+ACO Minimum Latency: 2
+Dijkstra Path: 0 -> 4
+Dijkstra Minimum Latency: 2
+
+Scenario 2
+ACO Best Path: 0 -> 4
+ACO Minimum Latency: 2
+Dijkstra Path: 0 -> 4
+Dijkstra Minimum Latency: 2
